@@ -10,42 +10,42 @@ Notebook tập trung trả lời ba câu hỏi chính:
 
 Ý nghĩa các cột trong dataset
 
-| Tên Cột                  | Kiểu dữ liệu | Mô tả                                                               |
-| :----------------------- | :----------- | :------------------------------------------------------------------ |
-| `location.name`          | `object`     | Tên địa điểm (tỉnh/thành phố).                                     |
-| `location.region`        | `object`     | Vùng miền của địa điểm.                                            |
-| `location.terrain`       | `object`     | Loại địa hình của địa điểm (ví dụ: đồng bằng, miền núi, ven biển).  |
-| `location.country`       | `object`     | Quốc gia của địa điểm (trong trường hợp này là Việt Nam).           |
-| `location.lat`           | `float64`    | Vĩ độ của địa điểm.                                                |
-| `location.lon`           | `float64`    | Kinh độ của địa điểm.                                              |
-| `date`                   | `datetime64` | Ngày dự báo thời tiết.                                             |
-| `date_epoch`             | `int64`      | Thời gian dưới dạng Epoch (số giây kể từ 01/01/1970 UTC).           |
-| `day.maxtemp_c`          | `float64`    | Nhiệt độ tối đa trong ngày (°C).                                   |
-| `day.maxtemp_f`          | `float64`    | Nhiệt độ tối đa trong ngày (°F).                                   |
-| `day.mintemp_c`          | `float64`    | Nhiệt độ tối thiểu trong ngày (°C).                                |
-| `day.mintemp_f`          | `float64`    | Nhiệt độ tối thiểu trong ngày (°F).                                |
-| `day.avgtemp_c`          | `float64`    | Nhiệt độ trung bình trong ngày (°C).                               |
-| `day.avgtemp_f`          | `float64`    | Nhiệt độ trung bình trong ngày (°F).                               |
-| `day.maxwind_mph`        | `float64`    | Tốc độ gió tối đa trong ngày (dặm/giờ).                            |
-| `day.maxwind_kph`        | `float64`    | Tốc độ gió tối đa trong ngày (km/giờ).                             |
-| `day.totalprecip_mm`     | `float64`    | Tổng lượng mưa trong ngày (mm).                                    |
-| `day.totalprecip_in`     | `float64`    | Tổng lượng mưa trong ngày (inch).                                  |
-| `day.totalsnow_cm`       | `float64`    | Tổng lượng tuyết rơi trong ngày (cm).                               |
-| `day.avgvis_km`          | `float64`    | Tầm nhìn trung bình trong ngày (km).                               |
-| `day.avgvis_miles`       | `float64`    | Tầm nhìn trung bình trong ngày (dặm).                              |
-| `day.avghumidity`        | `int64`      | Độ ẩm trung bình trong ngày (%).                                   |
-| `day.daily_will_it_rain` | `int64`      | Có mưa trong ngày hay không (1 = Có, 0 = Không).                    |
-| `day.daily_chance_of_rain` | `int64`    | Khả năng mưa trong ngày (%).                                       |
-| `day.condition.text`     | `object`     | Mô tả điều kiện thời tiết (ví dụ: "Sunny", "Partly cloudy").       |
-| `day.condition.icon`     | `object`     | Liên kết đến biểu tượng điều kiện thời tiết.                       |
-| `day.condition.code`     | `int64`      | Mã số điều kiện thời tiết.                                         |
-| `day.uv`                 | `float64`    | Chỉ số tia UV.                                                     |
-| `astro.sunrise`          | `object`     | Thời gian mặt trời mọc.                                            |
-| `astro.sunset`           | `object`     | Thời gian mặt trời lặn.                                            |
-| `astro.moonrise`         | `object`     | Thời gian trăng mọc.                                               |
-| `astro.moonset`          | `object`     | Thời gian trăng lặn.                                               |
-| `astro.moon_phase`       | `object`     | Giai đoạn mặt trăng.                                              |
-| `astro.moon_illumination` | `int64`     | Độ sáng của mặt trăng (%).                                         |
+| Tên Cột                    | Kiểu dữ liệu | Mô tả                                                              |
+| :------------------------- | :----------- | :----------------------------------------------------------------- |
+| `location.name`            | `object`     | Tên địa điểm (tỉnh/thành phố).                                     |
+| `location.region`          | `object`     | Vùng miền của địa điểm.                                            |
+| `location.terrain`         | `object`     | Loại địa hình của địa điểm (ví dụ: đồng bằng, miền núi, ven biển). |
+| `location.country`         | `object`     | Quốc gia của địa điểm (trong trường hợp này là Việt Nam).          |
+| `location.lat`             | `float64`    | Vĩ độ của địa điểm.                                                |
+| `location.lon`             | `float64`    | Kinh độ của địa điểm.                                              |
+| `date`                     | `datetime64` | Ngày dự báo thời tiết.                                             |
+| `date_epoch`               | `int64`      | Thời gian dưới dạng Epoch (số giây kể từ 01/01/1970 UTC).          |
+| `day.maxtemp_c`            | `float64`    | Nhiệt độ tối đa trong ngày (°C).                                   |
+| `day.maxtemp_f`            | `float64`    | Nhiệt độ tối đa trong ngày (°F).                                   |
+| `day.mintemp_c`            | `float64`    | Nhiệt độ tối thiểu trong ngày (°C).                                |
+| `day.mintemp_f`            | `float64`    | Nhiệt độ tối thiểu trong ngày (°F).                                |
+| `day.avgtemp_c`            | `float64`    | Nhiệt độ trung bình trong ngày (°C).                               |
+| `day.avgtemp_f`            | `float64`    | Nhiệt độ trung bình trong ngày (°F).                               |
+| `day.maxwind_mph`          | `float64`    | Tốc độ gió tối đa trong ngày (dặm/giờ).                            |
+| `day.maxwind_kph`          | `float64`    | Tốc độ gió tối đa trong ngày (km/giờ).                             |
+| `day.totalprecip_mm`       | `float64`    | Tổng lượng mưa trong ngày (mm).                                    |
+| `day.totalprecip_in`       | `float64`    | Tổng lượng mưa trong ngày (inch).                                  |
+| `day.totalsnow_cm`         | `float64`    | Tổng lượng tuyết rơi trong ngày (cm).                              |
+| `day.avgvis_km`            | `float64`    | Tầm nhìn trung bình trong ngày (km).                               |
+| `day.avgvis_miles`         | `float64`    | Tầm nhìn trung bình trong ngày (dặm).                              |
+| `day.avghumidity`          | `int64`      | Độ ẩm trung bình trong ngày (%).                                   |
+| `day.daily_will_it_rain`   | `int64`      | Có mưa trong ngày hay không (1 = Có, 0 = Không).                   |
+| `day.daily_chance_of_rain` | `int64`      | Khả năng mưa trong ngày (%).                                       |
+| `day.condition.text`       | `object`     | Mô tả điều kiện thời tiết (ví dụ: "Sunny", "Partly cloudy").       |
+| `day.condition.icon`       | `object`     | Liên kết đến biểu tượng điều kiện thời tiết.                       |
+| `day.condition.code`       | `int64`      | Mã số điều kiện thời tiết.                                         |
+| `day.uv`                   | `float64`    | Chỉ số tia UV.                                                     |
+| `astro.sunrise`            | `object`     | Thời gian mặt trời mọc.                                            |
+| `astro.sunset`             | `object`     | Thời gian mặt trời lặn.                                            |
+| `astro.moonrise`           | `object`     | Thời gian trăng mọc.                                               |
+| `astro.moonset`            | `object`     | Thời gian trăng lặn.                                               |
+| `astro.moon_phase`         | `object`     | Giai đoạn mặt trăng.                                               |
+| `astro.moon_illumination`  | `int64`      | Độ sáng của mặt trăng (%).                                         |
 
 Các cột này cung cấp một cái nhìn toàn diện về điều kiện thời tiết tại các địa điểm khác nhau ở Việt Nam, bao gồm thông tin về nhiệt độ, độ ẩm, gió, lượng mưa, tầm nhìn và các yếu tố thiên văn khác.
 
@@ -81,7 +81,7 @@ regional_averages = (
 
 ![Tổng quan theo vùng](assets/01_tong_quan_theo_vung.png)
 
-### Nhận xét ngắn
+### Nhận xét
 
 Nhìn tổng thể, các vùng của Việt Nam đều mang đặc trưng **nóng ẩm, mưa nhiều** của khí hậu nhiệt đới. Nhiệt độ trung bình ở các vùng đều trên 20°C, độ ẩm cao và lượng mưa trung bình ngày khá lớn (trên 5mm (tức hơn 1500mm/năm), độ ẩm > 70%.). Sự khác biệt giữa các vùng có tồn tại, nhưng chưa quá lớn nếu chỉ nhìn ở mức trung bình năm.
 
@@ -94,7 +94,7 @@ correlation_matrix = df_weather[selected_columns].dropna().corr()
 
 ![Tương quan tọa độ và thời tiết](assets/02_tuong_quan_toa_do_thoi_tiet.png)
 
-### Nhận xét ngắn
+### Nhận xét
 
 Có thể thấy tọa độ địa lý **tương quan yếu** với chỉ số thời tiết, tức tính chất thời tiết khá đồng nhất, không khác biệt nhiều giữa các miền. Điểm rõ nhất là mối tương quan âm giữa **vĩ độ** và **nhiệt độ trung bình**: càng ra xa xích đạo, nhiệt độ có xu hướng giảm. Điều này cho thấy khác biệt Bắc - Nam là có, nhưng không đủ để giải thích toàn bộ tính chất thời tiết chỉ bằng tọa độ.
 
@@ -130,7 +130,8 @@ monthly_weather_summary = (
 *   **Trung du và miền núi Bắc Bộ, Đồng Bằng Sông Hồng**: Mưa lớn tập trung vào mùa hè (tháng 6 - tháng 9), đặc biệt là vào tháng 7-8. Đây cũng là mùa bão và lũ lụt ở miền Bắc.
 *   **Tây Nguyên**: Có mùa mưa rõ rệt từ tháng 5 đến tháng 10, với lượng mưa đạt đỉnh vào khoảng tháng 8-9. Mùa khô rất rõ ràng với lượng mưa thấp kỷ lục từ tháng 12 đến tháng 4.
 
-#### Kết luận
+#### Kết luận:
+
 *   Trong khi các miền địa lý phía Bắc có 2 nền nhiệt khác biệt rõ rệt trong năm: nóng vào hè - thu, lạnh vào xuân và đông thì phía Nam nóng đều quanh năm, nhiệt độ không có sự chênh lệch lớn.
 *   Thời điểm nóng nhất trong năm ở phía Nam trùng vào cuối mùa khô, còn thời điểm nóng nhất trong năm ở phía Bắc trùng vào mùa mưa. Điều đó tạo nên 2 kiểu khí hậu khá điển hình: trong Nam là khí hậu cận xích đạo gồm mùa mưa và mùa khô, phía Bắc là khí hậu gió mùa gồm mùa đông lạnh khô và mùa hè nóng ẩm.
 
@@ -148,7 +149,7 @@ monthly_astro = df.groupby('month')['day_length'].mean()
 
 ![Độ dài ngày theo tháng](assets/04_do_dai_ngay_theo_thang.png)
 
-### Nhận xét ngắn
+### Nhận xét
 
 Độ dài ngày tăng dần từ đầu năm và đạt đỉnh vào khoảng tháng 6 (Hạ chí) rồi giảm dần về những tháng cuối năm. Đây là biểu hiện rõ rệt của một quốc gia ở bán cầu Bắc như Việt Nam, đồng thời phản ánh một tính chất thời gian rất đặc trưng: "Đêm tháng Năm chưa nằm đã sáng, ngày tháng Mười chưa cười đã tối".
 
